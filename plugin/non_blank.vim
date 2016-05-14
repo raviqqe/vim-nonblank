@@ -5,6 +5,7 @@ let g:non_blank_loaded = 1
 
 command! DeleteBlanks let lastview = winsaveview() |
                     \ :%s/\s\+$//e |
-                    \ :%s/\(\s*$\n\?\)\+\%$//e |
+                    \ :%s/\(\n\r\?\)\+\%$//e |
                     \ call winrestview(lastview)
+
 autocmd BufWritePre * DeleteBlanks
