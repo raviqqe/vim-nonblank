@@ -33,6 +33,16 @@ $
 bar baz$
 ```
 
+## Configuration
+
+To disable auto deletion of blank characters, set the flag as below.
+
+```vim
+let g:nonblank_auto_delete = 0
+```
+
+And, run `:NonBlank` command manually with or without a range.
+
 ## License
 
 [The Unlicense](https://unlicense.org/)
