@@ -13,7 +13,7 @@ Plug 'raviqqe/vim-nonblank'
 
 ## Example
 
-A buffer of content ($ denotes a newline character):
+A buffer of content (`$` denotes a newline character):
 
 ```text
 foo  $
