@@ -1,3 +1,15 @@
 # vim-non-blank
 
-Deletes all extra blanks when writing out files.
+Deletes all extra blanks on write.
+
+## Installation
+
+Using [vim-plug](https://github.com/junegunn/vim-plug),
+
+```
+Plug 'raviqqe/vim-non-blank'
+```
+
+## License
+
+[The Unlicense](https://unlicense.org/)
