@@ -1,0 +1,30 @@
+*nonblank.txt*	Delete extra blank characters                        *nonblank*
+
+==============================================================================
+CONTENTS                                                    *nonblank-contents*
+  1. Introduction..............................................|nonblank-intro|
+  2. Commands...............................................|nonblank-commands|
+  3. Autocommands...........................................|nonblank-autocmds|
+
+==============================================================================
+INTRODUCTION                                                   *nonblank-intro*
+
+*nonblank* provides |:NonBlank| command which deletes extra blank characters.
+It will be run on every write of buffers by default.
+
+==============================================================================
+COMMANDS                                                    *nonblank-commands*
+
+:[range]NonBlank                                                    *:NonBlank*
+	Deletes all extra blank characters of trailing spaces, tabs, and
+	newlines in a current buffer or given range.
+
+==============================================================================
+AUTOCOMMANDS                                                *nonblank-autocmds*
+
+Set the following flag to 0 to disable automatic deletion on buffer write.
+
+	let g:nonblank_auto_delete = 0
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
