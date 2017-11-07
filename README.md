@@ -6,7 +6,7 @@ Deletes all extra blanks on write.
 
 Using [vim-plug](https://github.com/junegunn/vim-plug),
 
-```
+```vim
 Plug 'raviqqe/vim-non-blank'
 ```
 
