@@ -1,16 +1,16 @@
-if exists('g:non_blank_loaded') || &compatible
+if exists('g:nonblank_loaded') || &compatible
   finish
 endif
 
-let g:non_blank_loaded = 1
+let g:nonblank_loaded = 1
 
-command! DeleteBlanks
+command! NonBlank
       \ let lastview = winsaveview() |
       \ :%s/\s\+$//e |
       \ :%s/\(\n\r\?\)\+\%$//e |
       \ call winrestview(lastview)
 
-augroup non_blank
+augroup nonblank
   autocmd!
-  autocmd BufWritePre * DeleteBlanks
+  autocmd BufWritePre * NonBlank
 augroup END
