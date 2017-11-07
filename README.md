@@ -1,4 +1,4 @@
-# vim-non-blank
+# vim-nonblank
 
 Deletes all extra blank characters of trailing spaces, tabs, and newlines on
 every write.
@@ -8,7 +8,7 @@ every write.
 Using [vim-plug](https://github.com/junegunn/vim-plug),
 
 ```vim
-Plug 'raviqqe/vim-non-blank'
+Plug 'raviqqe/vim-nonblank'
 ```
 
 ## Example
