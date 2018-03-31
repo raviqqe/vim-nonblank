@@ -15,7 +15,7 @@ command! NonBlank
       \ %s/\(\n\r\?\)\+\%$//e |
       \ call winrestview(s:view)
 
-if get(g:, 'nonblank_auto_delete', 1)
+if get(g:, 'nonblank_enabled', 1)
   augroup nonblank
     autocmd!
     autocmd BufWritePre * NonBlank
