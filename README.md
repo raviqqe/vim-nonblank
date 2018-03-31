@@ -1,7 +1,6 @@
 # vim-nonblank
 
-Deletes all extra blank characters of trailing spaces, tabs, and newlines on
-every write.
+This plugin deletes trailing whitespaces on every write.
 
 ## Installation
 
@@ -13,7 +12,7 @@ Plug 'raviqqe/vim-nonblank'
 
 ## Example
 
-A buffer of content (`$` denotes a newline character):
+A buffer (`$` denotes a newline character)
 
 ```text
 foo  $
@@ -24,7 +23,7 @@ bar baz   $
 $
 ```
 
-will be saved as:
+will be normalized as below.
 
 ```text
 foo$
@@ -35,13 +34,25 @@ bar baz$
 
 ## Configuration
 
-To disable auto deletion of blank characters, set the flag as below.
+### Disabling auto deletion
+
+Set the `enabled` flag to `0`.
 
 ```vim
-let g:nonblank_auto_delete = 0
+let g:nonblank_enabled = 0
 ```
 
-And, run `:NonBlank` command manually with or without a range.
+Then you can run `:NonBlank` command manually.
+
+### Blacklisting filetypes
+
+Set the `blacklist` flag.
+
+```vim
+let g:nonblank_blacklist = ['python']
+```
+
+The default value is `['diff', 'gitcommit']`.
 
 ## License
 
