@@ -18,6 +18,6 @@ command! NonBlank
 if get(g:, 'nonblank_enabled', 1)
   augroup nonblank
     autocmd!
-    autocmd BufWritePre * undojoin | NonBlank
+    autocmd BufWritePre * silent! undojoin | NonBlank
   augroup END
 endif
